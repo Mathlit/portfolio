@@ -1,0 +1,53 @@
+<!doctype html>
+    {{> head}}
+    <body>
+        
+        <div id="mainContainer">
+            <header>
+                <div class="cirkleBackground"></div>
+                <h1>{{title}}</h1>
+            </header>
+
+            <section id="contentContainer">
+                
+                <div class="block">
+
+                    <p>Hi, I'm Mathijs Litjens. I'm a fullstack developer from the Netherlands.</p>
+
+                    {{>divider}}
+
+                    <p>I like working with new technologies, but am also used to working with the known and trusted toolset.</p>
+
+                    {{>divider}}
+
+                    <p>I'm familiar with the following:</p>
+
+                    {{>skills}}
+
+                    {{>divider}}
+
+                    <p>I'm currently learning, or interested in learning:</p>
+
+                    {{>learning}}
+
+                    {{>divider}}
+
+                    <p>You can contact me at <span class="m">&#109;&#097;&#116;&#104;&#105;&#106;&#115;&#064;&#108;&#105;&#116;&#106;&#101;&#110;&#115;&#046;&#120;&#121;&#122;</span></p>
+                    
+                    <p>
+                        More:<br />
+                        <a href="https://www.linkedin.com/in/mathijs-litjens-88511864/" target="_blank">LinkedIn</a>
+                        <a href="https://cv.mathijslitjens.nl/" target="_blank">CV</a>
+                    </p>
+
+                </div>
+
+                <div class="block">
+                    <p>Want to see how this site was made? Check out the code on <a href="https://github.com/Mathlit/portfolio" target="_blank">Github</a></p>
+                </div>
+
+            </section>
+        </div>
+        {{> scripts}}
+    </body>
+</html>
