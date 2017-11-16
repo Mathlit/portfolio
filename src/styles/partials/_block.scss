@@ -1,0 +1,88 @@
+/**
+* Block component
+*/
+
+.block {
+    min-width: 50%;
+    width: 600px;
+    max-width: 100%;
+
+    margin-bottom: $defaultSpacing;
+    padding: $defaultSpacing #{$defaultSpacing / 2};
+
+    background-color: $colorBlock;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px $colorBlockShadow;
+
+    * {
+        color: #1b1b1b;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: $defaultSpacing / 2;
+
+        font: {
+            family: 'Covered By Your Grace', cursive;
+        }
+
+        & + p {
+            margin-top: 0;
+        }
+    }
+
+    p {
+        line-height: 25px;
+        text-align: center;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: $colorTertiary;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        width: 50%;
+        max-width: 100%;
+
+        margin: 0 auto;
+        padding: 0;
+
+        li {
+            display: inline;
+            font-size: 14px;
+            margin: 5px;
+            padding: 7px 10px;
+            background-color: #d1d1d1;
+
+            border-radius: 20px;
+        }
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+    }
+
+    .divider {
+        margin: #{$defaultSpacing * 1.5} auto;
+        width: $defaultSpacing;
+        opacity: .5;
+
+        svg {
+            polygon {
+                fill: $colorSecondary;
+            }
+        }
+    }
+}

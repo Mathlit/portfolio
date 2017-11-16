@@ -34,7 +34,7 @@ html, body {
             size: 30px;
         }
         
-        color: $colorThiefPrimary;
+        color: $colorPrimary;
 
         .cirkleBackground {
             position: absolute;
@@ -66,8 +66,9 @@ html, body {
                 }
             }
 
-            opacity: 1;
-            transition: opacity 600ms cubic-bezier(.1, .75, .2, 1);
+            animation-name: pulse;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
         }
 
         h1 {
@@ -93,84 +94,6 @@ html, body {
         font: {
             family: 'Roboto', sans-serif;
             size: 16px;
-        }
-        
-        .block {
-            width: 300px;
-            max-width: 100%;
-
-            margin-bottom: $defaultSpacing;
-            padding: $defaultSpacing #{$defaultSpacing / 2};
-
-            background-color: $colorBlock;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px $colorBlockShadow;
-
-            color: #1b1b1b;
-
-            p {
-                line-height: 25px;
-
-                text-align: center;
-
-                color: #1b1b1b;
-
-                &:first-of-type {
-                    margin-top: 0;
-                }
-
-                &:last-of-type {
-                    margin-bottom: 0;
-                }
-            }
-
-            h1, h2, h3, h4, h5, h6 {
-                margin: $defaultSpacing / 2;
-
-                font: {
-                    family: 'Covered By Your Grace', cursive;
-                }
-
-                & + p {
-                    margin-top: 0;
-                }
-            }
-
-            a {
-                color: $colorThiefTertiary;
-            }
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                
-                margin: 0;
-                padding: 0;
-
-                li {
-                    display: inline;
-                    font-size: 14px;
-                    margin: 5px;
-                    padding: 7px 10px;
-                    background-color: #d1d1d1;
-
-                    border-radius: 20px;
-                }
-            }
-
-            .divider {
-                margin: #{$defaultSpacing * 1.5} auto;
-                width: $defaultSpacing;
-                opacity: .5;
-
-                svg {
-                    polygon {
-                        fill: $colorThiefSecondary;
-                    }
-                }
-            }
         }
     }
 }

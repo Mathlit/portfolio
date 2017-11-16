@@ -61,10 +61,6 @@ gulp.task('assets', () => {
         .pipe(gulp.dest(buildDir + '/assets/'));
 });
 
-gulp.task('colorThief', () => {
-
-});
-
 gulp.task('watch', () => {
     gulp.watch(sourceDir + '/styles/**/*.scss', ['styles']);
     gulp.watch(sourceDir + '/scripts/**/*.js', ['scripts']);

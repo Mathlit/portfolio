@@ -9,7 +9,7 @@ function init() {
 
     // Modernizr adds the class 'touchevents' if the user uses a touchscreen.
     // Though this locks down the cirkle pattern, it prevents a jumping effect
-    if (!document.documentElement.classList.contains('touchevents')) {
+    if (!document.documentElement.classList.contains('touchevents') && false) {
         let cirkleBackground = document.querySelector('.cirkleBackground');
         document.addEventListener('mousemove', (e) => {
             let x = e.clientX - 100;

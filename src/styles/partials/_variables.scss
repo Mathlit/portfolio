@@ -1,5 +1,25 @@
+$colorPrimary: #f5bf5f;
+$colorSecondary: #7f5287;
+$colorTertiary: #46bdf3;
 $colorBackground: #d8d8d8;
 $colorBlock: #ffffff;
 $colorBlockShadow: rgba(0, 0, 0, .3);
 
 $defaultSpacing: 20px;
+
+@keyframes pulse {
+    0% {
+        -webkit-mask-size: 200px;
+        mask-size: 200px;
+    }
+
+    50% {
+        -webkit-mask-size: 500px;
+        mask-size: 500px;
+    }
+
+    100% {
+        -webkit-mask-size: 200px;
+        mask-size: 200px;
+    }
+}
